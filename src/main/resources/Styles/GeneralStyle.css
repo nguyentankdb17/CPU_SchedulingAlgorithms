@@ -1,0 +1,14 @@
+.MenuAnchorPane {
+    -fx-background-color: #EEEEEE;
+}
+
+.MenuAnchorPane Button {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.MenuAnchorPane Button:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.26;
+    -fx-scale-y: 1.2;
+}
