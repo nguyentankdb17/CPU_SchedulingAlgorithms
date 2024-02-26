@@ -7,7 +7,7 @@ public class AppStart extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
+        //CHECK GIT
     }
 
     public static void main(String[] args) {
