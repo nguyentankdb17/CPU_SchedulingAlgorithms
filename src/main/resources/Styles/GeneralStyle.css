@@ -1,5 +1,5 @@
 .MenuAnchorPane {
-    -fx-background-color: #EEEEEE;
+    -fx-background-color: #FFFFFF;
 }
 
 .MenuAnchorPane Button {
@@ -12,3 +12,46 @@
     -fx-scale-x: 1.26;
     -fx-scale-y: 1.2;
 }
+
+.MenuBar {
+    -fx-background-color: linear-gradient(to top right,#752e65, #44008b);
+}
+
+.ExitButton{
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+}
+.ExitButton:hover{
+    -fx-background-color: #b22a00;
+}
+
+.MenuBarButton {
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-padding: 0 0 0 10;
+    -fx-background-insets: 0;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+}
+
+.MenuBarButton:hover {
+    -fx-background-color: #c6a1d6;
+}
+
+.NumberProcess {
+    -fx-background-color: transparent;
+}
+
+.NumberProcess Button:hover {
+    -fx-cursor: hand;
+}
+
+.NumberProcess Label {
+    -fx-font-weight: bold;
+}
+

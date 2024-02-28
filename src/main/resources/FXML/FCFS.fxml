@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="640.0" styleClass="MenuAnchorPane" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.FCFSController">
+   <children>
+      <Pane layoutX="65.0" layoutY="138.4" prefHeight="39.0" prefWidth="574.0" styleClass="NumberProcess" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="10.0" layoutY="11.0" stylesheets="@../Styles/GeneralStyle.css" text="Please enter number of processes:" />
+            <TextField layoutX="215.0" layoutY="7.0" prefHeight="25.0" prefWidth="214.0" promptText="Number of processes" />
+            <Button layoutX="440.0" layoutY="7.0" mnemonicParsing="false" text="Enter" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -16,9 +16,13 @@ public class AppUIController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Model.getInstance().getViewFactory().getCurrentViewString().addListener((observableValue, oldVal, newVal) -> {
         switch (newVal) {
-            case "Menu":
-            default:
-                menuParent.setCenter(Model.getInstance().getViewFactory().getMenuView());
+            case "FCFS"-> menuParent.setCenter(Model.getInstance().getViewFactory().getFCFSView());
+            case "SJF" -> menuParent.setCenter(Model.getInstance().getViewFactory().getSJFView());
+            case "NonSJF" -> menuParent.setCenter(Model.getInstance().getViewFactory().getNonSJFView());
+            case "Priority" -> menuParent.setCenter(Model.getInstance().getViewFactory().getPriorityView());
+            case "NonPriority" -> menuParent.setCenter(Model.getInstance().getViewFactory().getNonPriorityView());
+            case "RR" -> menuParent.setCenter(Model.getInstance().getViewFactory().getRoundRobinView());
+            case "Menu" -> menuParent.setCenter(Model.getInstance().getViewFactory().getMenuView());
         }
         });
     }
