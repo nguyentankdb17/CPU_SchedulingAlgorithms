@@ -55,3 +55,54 @@
     -fx-font-weight: bold;
 }
 
+.AddProcess {
+    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+
+.AddProcess Label {
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.AddProcessTextField {
+    -fx-background-color: #EEEEEE;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.2em;
+}
+
+.AddProcess Button {
+    -fx-background-color: #132A13;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+}
+
+.AddProcess Button:hover {
+    -fx-cursor: hand;
+}
+
+.ExecuteButton {
+    -fx-background-color: #FFFFE2;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 2);
+}
+
+.ExecuteButton:hover {
+    -fx-cursor: hand;
+}
+
+.RemoveButton {
+    -fx-background-color: transparent;
+}
+
+.RemoveButton:hover {
+    -fx-cursor: hand;
+}
+
+.ErrorLabel {
+    -fx-text-fill: #FF0000;
+    -fx-font-weight: bold;
+}
+
+

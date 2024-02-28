@@ -11,4 +11,6 @@ module com.example.schedulingalgorithm {
     opens com.example.schedulingalgorithm to javafx.fxml;
     exports com.example.schedulingalgorithm;
     exports com.example.schedulingalgorithm.Controller;
+    exports com.example.schedulingalgorithm.Process;
+    exports com.example.schedulingalgorithm.Algorithm;
 }

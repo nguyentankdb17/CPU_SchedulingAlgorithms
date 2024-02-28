@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="720.0" prefWidth="640.0" styleClass="MenuAnchorPane" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.FCFSController">
-   <children>
-      <Pane layoutX="65.0" layoutY="138.4" prefHeight="39.0" prefWidth="574.0" styleClass="NumberProcess" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
-         <children>
-            <Label layoutX="10.0" layoutY="11.0" stylesheets="@../Styles/GeneralStyle.css" text="Please enter number of processes:" />
-            <TextField layoutX="215.0" layoutY="7.0" prefHeight="25.0" prefWidth="214.0" promptText="Number of processes" />
-            <Button layoutX="440.0" layoutY="7.0" mnemonicParsing="false" text="Enter" />
-         </children>
-      </Pane>
-   </children>
+<AnchorPane prefHeight="720.0" prefWidth="640.0" styleClass="MenuAnchorPane" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.FCFSController">
+   <Pane layoutX="15.2" layoutY="26.0" prefHeight="582.0" prefWidth="610.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
+      <TableView fx:id="table" layoutX="334.0" layoutY="24.0" prefHeight="405.0" prefWidth="270.0">
+         <columns>
+            <TableColumn fx:id="processColumn" prefWidth="90.0" text="Process" />
+            <TableColumn fx:id="burstTimeColumn" prefWidth="90.0" text="Burst Time" />
+            <TableColumn fx:id="arrivalTimeColumn" prefWidth="93.60006713867188" text="Arrival Time" />
+         </columns>
+      </TableView>
+      <VBox layoutX="55.0" layoutY="66.0" prefHeight="207.0" prefWidth="201.0" styleClass="AddProcess">
+         <Label text="Burst Time:" />
+         <TextField fx:id="burstTimeField" styleClass="AddProcessTextField" />
+         <Label text="Arrival Time:" />
+         <TextField fx:id="arrivalTimeField" styleClass="AddProcessTextField" />
+         <Button fx:id="addProcessButton" mnemonicParsing="false" text="Submit" />
+         <Label fx:id="errorLabel" styleClass="ErrorLabel" text="Error" />
+      </VBox>
+      <Button fx:id="removeProcessButton" layoutX="442.0" layoutY="456.0" mnemonicParsing="false" styleClass="RemoveButton">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../Images/removeButton.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="removeAllButton" layoutX="431.0" layoutY="523.0" mnemonicParsing="false" text="Remove All" />
+   </Pane>
+   <Button fx:id="executeButton" layoutX="294.0" layoutY="681.0" mnemonicParsing="false" styleClass="ExecuteButton" text="Execute" />
 </AnchorPane>

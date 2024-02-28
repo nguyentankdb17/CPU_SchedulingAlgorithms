@@ -5,43 +5,39 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="720.0" prefWidth="70.0" styleClass="MenuBar" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.MenuBarController">
-   <children>
-      <Button fx:id="exitButton" layoutX="6.0" layoutY="640.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="19.0" styleClass="ExitButton" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="6.0">
-         <graphic>
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/exitButton.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="githubButton" layoutX="-1.0" layoutY="150.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="0.0" styleClass="MenuBarButton" AnchorPane.topAnchor="150.0">
-         <graphic>
-            <ImageView fitHeight="58.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/githubLogo.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="infoButton" layoutX="-1.0" layoutY="53.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="27.0" styleClass="MenuBarButton" AnchorPane.topAnchor="50.0">
-         <graphic>
-            <ImageView fitHeight="56.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/info.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="homeButton" layoutX="-1.0" layoutY="351.0" minHeight="0.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="MenuBarButton" AnchorPane.topAnchor="350.0">
-         <graphic>
-            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/homeButton.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-   </children>
+<AnchorPane prefHeight="720.0" prefWidth="70.0" styleClass="MenuBar" stylesheets="@../Styles/GeneralStyle.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.schedulingalgorithm.Controller.MenuBarController">
+   <Button fx:id="exitButton" layoutX="6.0" layoutY="640.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="19.0"
+           styleClass="ExitButton" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="6.0">
+      <graphic>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/exitButton.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="githubButton" layoutX="-1.0" layoutY="150.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="0.0"
+           styleClass="MenuBarButton" AnchorPane.topAnchor="150.0">
+      <graphic>
+         <ImageView fitHeight="58.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/githubLogo.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="infoButton" layoutX="-1.0" layoutY="53.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="27.0"
+           styleClass="MenuBarButton" AnchorPane.topAnchor="50.0">
+      <graphic>
+         <ImageView fitHeight="56.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/info.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="homeButton" layoutX="-1.0" layoutY="351.0" minHeight="0.0" mnemonicParsing="false" prefHeight="50.0"
+           prefWidth="50.0" styleClass="MenuBarButton" AnchorPane.topAnchor="350.0">
+      <graphic>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/homeButton.png"/>
+         </ImageView>
+      </graphic>
+   </Button>
 </AnchorPane>

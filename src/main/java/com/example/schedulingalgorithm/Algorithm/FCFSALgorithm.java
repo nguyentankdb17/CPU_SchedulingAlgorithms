@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class FCFSALgorithm {
 
-    public double[] waitingTime(List<ProcessObject> processList) {
+    public static double[] waitingTime(List<ProcessObject> processList) {
         double[] waiting = new double[processList.size()];
         double[] wt = new double[processList.size()];
         waiting[0] = 0.d;
@@ -20,7 +20,7 @@ public class FCFSALgorithm {
         return wt;
     }
 
-    public double[] turnAroundTime(List<ProcessObject> processList) {
+    public static double[] turnAroundTime(List<ProcessObject> processList) {
         double[] wt = waitingTime(processList);
         double[] ta = new double[processList.size()];
         for (int i = 0; i < processList.size(); ++i) {
