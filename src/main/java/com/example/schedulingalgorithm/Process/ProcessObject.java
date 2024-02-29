@@ -1,10 +1,10 @@
 package com.example.schedulingalgorithm.Process;
 
 public class ProcessObject implements Comparable<ProcessObject>{
-    private int id;
-    private double burstTime;
-    private double arrivalTime;
-    private int priority;
+    protected int id;
+    protected double burstTime;
+    protected double arrivalTime;
+    protected int priority;
 
     public int getId() {
         return id;

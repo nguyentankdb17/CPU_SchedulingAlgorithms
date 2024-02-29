@@ -20,6 +20,8 @@
          <TextField fx:id="arrivalTimeField" styleClass="AddProcessTextField" />
          <Button fx:id="addProcessButton" mnemonicParsing="false" text="Submit" />
          <Label fx:id="errorLabel" styleClass="ErrorLabel" text="Error" />
+         <Label fx:id="errorFullLabel" styleClass="ErrorLabel" text="Table is full" />
+         <Label fx:id="errorEmptyLabel" layoutX="10.0" layoutY="248.0" styleClass="ErrorLabel" text="Table is empty" />
       </VBox>
       <Button fx:id="removeProcessButton" layoutX="442.0" layoutY="456.0" mnemonicParsing="false" styleClass="RemoveButton">
          <graphic>

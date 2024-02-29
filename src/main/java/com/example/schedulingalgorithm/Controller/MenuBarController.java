@@ -9,7 +9,6 @@ import java.util.ResourceBundle;
 
 public class MenuBarController implements Initializable {
     public Button infoButton;
-    public Button githubButton;
     public Button exitButton;
     public Button homeButton;
 
