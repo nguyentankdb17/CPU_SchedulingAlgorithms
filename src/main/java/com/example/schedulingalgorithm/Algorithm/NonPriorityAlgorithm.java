@@ -4,19 +4,19 @@ import com.example.schedulingalgorithm.Process.ProcessObject;
 
 import java.util.List;
 
-public class NonSJFAlgorithm {
+public class NonPriorityAlgorithm {
 
     public static double[] waitingTime(List<ProcessObject> processList) {
         int n = processList.size();
         double[] wt = new double[n];
-        int numProcess = 0, indexMin = 0;
-        double time = 0.d, timeMin;
+        int numProcess = 0, indexMin = 0, priorityMin;
+        double time = 0.d;
         boolean[] marked = new boolean[n];
         while (numProcess < n) {
-            timeMin = Double.MAX_VALUE;
+            priorityMin = Integer.MAX_VALUE;
             for (int i = 0; i < n; ++i) {
-                if (processList.get(i).getArrivalTime() <= time && processList.get(i).getBurstTime() < timeMin && !marked[i]) {
-                    timeMin = processList.get(i).getBurstTime();
+                if (processList.get(i).getArrivalTime() <= time && processList.get(i).getPriority() < priorityMin && !marked[i]) {
+                    priorityMin = processList.get(i).getPriority();
                     indexMin = processList.get(i).getId() - 1;
                 }
             }
@@ -29,8 +29,8 @@ public class NonSJFAlgorithm {
     }
 
     public static double[] turnAroundTime(List<ProcessObject> processList) {
-        double[] wt = waitingTime(processList);
         double[] ta = new double[processList.size()];
+        double[] wt = waitingTime(processList);
         for (int i = 0; i < processList.size(); ++i) {
             ta[i] = wt[i] + processList.get(i).getBurstTime();
         }

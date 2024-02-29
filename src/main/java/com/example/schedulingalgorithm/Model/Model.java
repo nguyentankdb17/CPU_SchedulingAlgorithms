@@ -3,7 +3,6 @@ package com.example.schedulingalgorithm.Model;
 import com.example.schedulingalgorithm.View.ViewFactory;
 
 public class Model {
-
     public static Model model;
     private final ViewFactory viewFactory;
 

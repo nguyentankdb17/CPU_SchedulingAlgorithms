@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class ViewFactory {
-
     private StringProperty currentViewString = new SimpleStringProperty();
 
     private AnchorPane menuView;

@@ -1,6 +1,5 @@
 package com.example.schedulingalgorithm.Controller;
 
-import com.example.schedulingalgorithm.Algorithm.FCFSALgorithm;
 import com.example.schedulingalgorithm.Algorithm.NonSJFAlgorithm;
 import com.example.schedulingalgorithm.Process.GeneralMethods;
 import com.example.schedulingalgorithm.Process.Pair;
@@ -22,7 +21,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class NonSJFController implements Initializable {
-
     public TableColumn<ProcessObject, Integer> processColumn;
     public TableColumn<ProcessObject, Double> burstTimeColumn;
     public TableColumn<ProcessObject, Double> arrivalTimeColumn;
@@ -58,6 +56,13 @@ public class NonSJFController implements Initializable {
                 String burstTime = burstTimeField.getText().trim();
                 for (int i = 0; i < burstTime.length(); ++i) {
                     if (burstTime.charAt(i) == 47 || burstTime.charAt(i) < 46 || burstTime.charAt(i) > 57) {
+                        errorLabel.setVisible(true);
+                        isAdd = false;
+                    }
+                }
+                String arrivalTime = arrivalTimeField.getText().trim();
+                for (int i = 0; i < arrivalTime.length(); ++i) {
+                    if (arrivalTime.charAt(i) == 47 || arrivalTime.charAt(i) < 46 || arrivalTime.charAt(i) > 57) {
                         errorLabel.setVisible(true);
                         isAdd = false;
                     }
@@ -134,7 +139,10 @@ public class NonSJFController implements Initializable {
                     label.setLayoutX(currentPosition);
                     Label label2 = new Label(Double.toString(pairList.get(i).getStartTime()));
                     label2.setLayoutX(label.getLayoutX() - 5);
-                    label2.setLayoutY(70);
+                    if (i % 2 == 0)
+                        label2.setLayoutY(70);
+                    else
+                        label2.setLayoutY(0);
                     label2.setStyle("-fx-background-color: transparent");
                     anchorPane.getChildren().addAll(label, label2);
                 }

@@ -60,6 +60,8 @@ public class ProcessObject implements Comparable<ProcessObject>{
     public int compareTo(ProcessObject o) {
         if (this.getArrivalTime() != o.getArrivalTime()) {
             return Double.compare(this.getArrivalTime(), o.getArrivalTime());
+        } else if (this.getPriority() != o.getPriority()) {
+            return Integer.compare(this.getPriority(), o.getPriority());
         } else
             return Integer.compare(this.getId(), o.getId());
     }
