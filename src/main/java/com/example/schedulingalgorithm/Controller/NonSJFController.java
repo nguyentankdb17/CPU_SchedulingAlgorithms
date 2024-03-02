@@ -146,6 +146,11 @@ public class NonSJFController implements Initializable {
                     label2.setStyle("-fx-background-color: transparent");
                     anchorPane.getChildren().addAll(label, label2);
                 }
+                Label label3 = new Label(Double.toString(amountTime));
+                label3.setStyle("-fx-background-color: transparent");
+                label3.setLayoutY(numProcesses % 2 == 0 ? 0 : 70);
+                label3.setLayoutX(495);
+                anchorPane.getChildren().add(label3);
 
                 Button closeButton = new Button("Close");
                 closeButton.setPrefWidth(60);

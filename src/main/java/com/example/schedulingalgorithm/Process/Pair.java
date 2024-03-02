@@ -2,8 +2,8 @@ package com.example.schedulingalgorithm.Process;
 
 
 public class Pair implements Comparable<Pair>{
-    private int id;
-    private double startTime;
+    protected int id;
+    protected double startTime;
 
     public void setId(int id) {
         this.id = id;
@@ -19,6 +19,11 @@ public class Pair implements Comparable<Pair>{
 
     public double getStartTime() {
         return startTime;
+    }
+
+    public Pair() {
+        this.id = 1;
+        this.startTime = 0.d;
     }
 
     public Pair(int id, double startTime) {

@@ -38,15 +38,25 @@ public class ProcessObject implements Comparable<ProcessObject>{
         this.priority = priority;
     }
 
+    public ProcessObject() {
+        this.setId(1);
+        this.setBurstTime(0.d);
+        this.setArrivalTime(0.d);
+        this.setPriority(0);
+    }
+
     public ProcessObject(int id, double burstTime) {
         this.setId(id);
         this.setBurstTime(burstTime);
+        this.setArrivalTime(0.d);
+        this.setPriority(0);
     }
 
     public ProcessObject(int id, double burstTime, double arrivalTime) {
         this.setId(id);
         this.setBurstTime(burstTime);
         this.setArrivalTime(arrivalTime);
+        this.setPriority(0);
     }
 
     public ProcessObject(int id, double burstTime, double arrivalTime, int priority) {
