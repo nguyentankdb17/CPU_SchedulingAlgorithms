@@ -143,7 +143,7 @@ public class FCFSController implements Initializable {
                 Label label3 = new Label(Double.toString(amountTime));
                 label3.setStyle("-fx-background-color: transparent");
                 label3.setLayoutY(numProcesses % 2 == 0 ? 0 : 70);
-                label3.setLayoutX(495);
+                label3.setLayoutX(545);
                 anchorPane.getChildren().add(label3);
 
                 Button closeButton = new Button("Close");
@@ -156,6 +156,7 @@ public class FCFSController implements Initializable {
                     table.getItems().clear();
                     processList.clear();
                     numProcesses = 0;
+                    currentPosition = 50;
                     stage.close();
                 });
 
