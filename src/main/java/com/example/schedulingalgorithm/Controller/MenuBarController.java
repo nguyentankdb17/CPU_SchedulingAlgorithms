@@ -8,14 +8,10 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuBarController implements Initializable {
-    public Button infoButton;
     public Button exitButton;
-    public Button homeButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        exitButton.setOnAction(event -> System.exit(0));
-
-        homeButton.setOnAction(event -> GeneralMethods.onMenu());
+        exitButton.setOnAction(event -> GeneralMethods.onMenu());
     }
 }
