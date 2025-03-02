@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="640.0" styleClass="MenuAnchorPane" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.SJFController">
+<AnchorPane prefHeight="720.0" prefWidth="640.0" styleClass="MenuAnchorPane" stylesheets="@../Styles/GeneralStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.SJFController">
     <Pane layoutX="15.2" layoutY="26.0" prefHeight="582.0" prefWidth="610.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
         <TableView fx:id="table" layoutX="334.0" layoutY="24.0" prefHeight="405.0" prefWidth="270.0">
             <columns>
@@ -13,24 +19,21 @@
                 <TableColumn fx:id="arrivalTimeColumn" prefWidth="93.60006713867188" text="Arrival Time" />
             </columns>
         </TableView>
-        <VBox layoutX="55.0" layoutY="66.0" prefHeight="207.0" prefWidth="201.0" styleClass="AddProcess">
+        <VBox layoutX="57.0" layoutY="105.0" prefHeight="207.0" prefWidth="201.0" styleClass="AddProcess">
             <Label text="Burst Time:" />
             <TextField fx:id="burstTimeField" styleClass="AddProcessTextField" />
             <Label text="Arrival Time:" />
             <TextField fx:id="arrivalTimeField" styleClass="AddProcessTextField" />
-            <Button fx:id="addProcessButton" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="addProcessButton" mnemonicParsing="false" text="ADD" />
             <Label fx:id="errorLabel" styleClass="ErrorLabel" text="Error" />
             <Label fx:id="errorFullLabel" styleClass="ErrorLabel" text="Table is full" />
             <Label fx:id="errorEmptyLabel" layoutX="10.0" layoutY="248.0" styleClass="ErrorLabel" text="Table is empty" />
         </VBox>
-        <Button fx:id="removeProcessButton" layoutX="442.0" layoutY="456.0" mnemonicParsing="false" styleClass="RemoveButton">
-            <graphic>
-                <ImageView fitHeight="38.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
-                    <Image url="@../Images/removeButton.png" />
-                </ImageView>
-            </graphic>
-        </Button>
-        <Button fx:id="removeAllButton" layoutX="431.0" layoutY="523.0" mnemonicParsing="false" text="Remove All" />
+        <Button fx:id="removeProcessButton" layoutX="442.0" layoutY="456.0" mnemonicParsing="false" styleClass="RemoveButton" />
+        <Button fx:id="removeAllButton" layoutX="436.0" layoutY="440.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" text="CLEAR" />
     </Pane>
-    <Button fx:id="executeButton" layoutX="294.0" layoutY="681.0" mnemonicParsing="false" styleClass="ExecuteButton" text="Execute" />
+    <Button fx:id="executeButton" layoutX="279.0" layoutY="650.0" mnemonicParsing="false" styleClass="ExecuteButton" text="EXECUTE">
+      <font>
+         <Font name="System Bold Italic" size="22.0" />
+      </font></Button>
 </AnchorPane>
