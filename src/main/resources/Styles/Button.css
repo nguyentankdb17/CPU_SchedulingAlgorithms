@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-border-radius: 5px;
+    -fx-cursor: pointer;
+    -fx-background-radius: 5px;
+    -fx-border-color: #2E7D32;
+    -fx-border-width: 2px;
+}
+
+.button:hover {
+    -fx-scale-shape: 1.1;
+}
