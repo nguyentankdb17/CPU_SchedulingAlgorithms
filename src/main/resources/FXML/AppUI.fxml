@@ -4,9 +4,9 @@
 
 <BorderPane fx:id="menuParent" style="-fx-background-color: #f5f5dc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
-    <left>
+    <bottom>
         <fx:include source="MenuBar.fxml" />
-    </left>
+    </bottom>
 
     <center>
         <fx:include source="Menu.fxml" />
