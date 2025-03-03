@@ -34,8 +34,8 @@ public class ViewFactory {
         }
 
         stage.setScene(scene);
-        stage.setTitle("Scheduling Calculate Tool");
-        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.setTitle("CPU Scheduling Algorithms Calculate Tool");
+        stage.initStyle(StageStyle.DECORATED);
         stage.show();
     }
 
