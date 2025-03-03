@@ -1,6 +1,6 @@
 package com.example.schedulingalgorithm.Controller;
 
-import com.example.schedulingalgorithm.Algorithm.FCFSALgorithm;
+import com.example.schedulingalgorithm.Algorithm.FCFSAlgorithm;
 import com.example.schedulingalgorithm.Process.GeneralMethods;
 import com.example.schedulingalgorithm.Process.ProcessObject;
 import com.example.schedulingalgorithm.Process.ProcessOutput;
@@ -112,8 +112,8 @@ public class FCFSController implements Initializable {
 
                 Collections.sort(processList);
                 double amountTime = GeneralMethods.amountExecuteTime(processList);
-                double[] wt = FCFSALgorithm.waitingTime(processList);
-                double[] ta = FCFSALgorithm.turnAroundTime(processList);
+                double[] wt = FCFSAlgorithm.waitingTime(processList);
+                double[] ta = FCFSAlgorithm.turnAroundTime(processList);
                 for (int i = 0; i < numProcesses; ++i) {
                     Label label = new Label("P" + Integer.toString(processList.get(i).getId()));
                     label.setStyle("-fx-border-color: black;"

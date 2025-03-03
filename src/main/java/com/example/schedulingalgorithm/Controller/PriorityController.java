@@ -1,7 +1,6 @@
 package com.example.schedulingalgorithm.Controller;
 
-import com.example.schedulingalgorithm.Algorithm.NonPriorityAlgorithm;
-import com.example.schedulingalgorithm.Algorithm.PriorityALgorithm;
+import com.example.schedulingalgorithm.Algorithm.PriorityAlgorithm;
 import com.example.schedulingalgorithm.Process.*;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
@@ -14,7 +13,6 @@ import javafx.stage.StageStyle;
 
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -126,11 +124,11 @@ public class PriorityController implements Initializable {
                 Scene scene = new Scene(anchorPane, 600, 400);
 
                 double amountTime = GeneralMethods.amountExecuteTime(processList);
-                double[] wt = PriorityALgorithm.waitingTime(processList);
-                double[] ta = PriorityALgorithm.turnAroundTime(processList);
-                double[] rt = PriorityALgorithm.respondTime(processList);
+                double[] wt = PriorityAlgorithm.waitingTime(processList);
+                double[] ta = PriorityAlgorithm.turnAroundTime(processList);
+                double[] rt = PriorityAlgorithm.respondTime(processList);
 
-                List<PairOther> pairList = PriorityALgorithm.pairList(processList);
+                List<PairOther> pairList = PriorityAlgorithm.pairList(processList);
                 for (int i = 0; i < pairList.size(); ++i) {
                     int index = pairList.get(i).getId();
                     Label label = new Label("P" + Integer.toString(index));
