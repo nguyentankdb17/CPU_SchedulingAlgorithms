@@ -9,19 +9,17 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="720.0" prefWidth="640.0" style="-fx-background-color: #ADD8E6;" styleClass="MenuAnchorPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schedulingalgorithm.Controller.MenuController">
-   <Button fx:id="NonPrePriorityAlgorithm" layoutX="414.0" layoutY="433.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Non-Preemptive Priority" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="414.0" />
-   <Button fx:id="RoundRobinAlgorithm" layoutX="414.0" layoutY="279.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Round Robin" wrapText="true" AnchorPane.bottomAnchor="387.0" AnchorPane.rightAnchor="100.0" />
-   <Button fx:id="PreSJFAlgorithm" layoutX="267.0" layoutY="360.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Preemptive SJF" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="360.0" />
-   <Button fx:id="NonPreSJFAlgorithm" layoutX="414.0" layoutY="360.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Non-Preemptive SJF" AnchorPane.leftAnchor="414.0" AnchorPane.topAnchor="360.0" />
-   <Button fx:id="PrePriorityAlgorithm" layoutX="266.0" layoutY="434.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Preemptive Priority" AnchorPane.bottomAnchor="232.0" AnchorPane.leftAnchor="266.0" />
-   <Button fx:id="FCFSAlgorithm" layoutX="266.0" layoutY="280.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="FCFS" AnchorPane.leftAnchor="266.0" AnchorPane.topAnchor="280.0" />
+   <Button fx:id="NonPrePriorityAlgorithm" layoutX="439.0" layoutY="487.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Non-Preemptive Priority" AnchorPane.bottomAnchor="178.60000000000002" AnchorPane.leftAnchor="439.0" />
+   <Button fx:id="RoundRobinAlgorithm" layoutX="439.0" layoutY="292.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Round Robin" wrapText="true" AnchorPane.bottomAnchor="373.6" AnchorPane.rightAnchor="74.60000000000002" />
+   <Button fx:id="PreSJFAlgorithm" layoutX="266.0" layoutY="386.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Preemptive SJF" AnchorPane.rightAnchor="247.60000000000002" AnchorPane.topAnchor="386.0" />
+   <Button fx:id="NonPreSJFAlgorithm" layoutX="439.0" layoutY="386.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Non-Preemptive SJF" AnchorPane.leftAnchor="439.0" AnchorPane.topAnchor="386.0" />
+   <Button fx:id="PrePriorityAlgorithm" layoutX="266.0" layoutY="487.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Preemptive Priority" AnchorPane.bottomAnchor="178.60000000000002" AnchorPane.leftAnchor="266.0" />
+   <Button fx:id="FCFSAlgorithm" layoutX="265.0" layoutY="292.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="FCFS" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="292.0" />
    <ImageView fitHeight="123.0" fitWidth="629.0" layoutX="6.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../Images/Menu.png" />
       </image>
    </ImageView>
-   <Button layoutX="267.0" layoutY="518.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Multi-level Queue" />
-   <Button layoutX="413.0" layoutY="518.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="126.0" text="Multi-level Feedback Queue" />
    <Text layoutX="47.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE THE ALGORITHM YOU WANT TO COMPUTE" textAlignment="CENTER" wrappingWidth="168.58734130859375">
       <font>
          <Font name="System Bold" size="25.0" />
