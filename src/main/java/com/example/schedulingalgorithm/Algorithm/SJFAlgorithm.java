@@ -50,10 +50,10 @@ public class SJFAlgorithm {
             ft[i] = processList.get(i).getArrivalTime();
         }
         List<PairOther> pairOtherList = pairList(processList);
-        for (int i = 0; i < pairOtherList.size(); ++i) {
-            int j = pairOtherList.get(i).getId() - 1;
-            wt[j] += (pairOtherList.get(i).getStartTime() - ft[j]);
-            ft[j] += (wt[j] + pairOtherList.get(i).getExecuteTime());
+        for (PairOther pairOther : pairOtherList) {
+            int j = pairOther.getId() - 1;
+            wt[j] += (pairOther.getStartTime() - ft[j]);
+            ft[j] += (wt[j] + pairOther.getExecuteTime());
         }
         return wt;
     }
@@ -67,11 +67,11 @@ public class SJFAlgorithm {
             marked[i] = false;
         }
         List<PairOther> pairOtherList = pairList(processList);
-        for (int i = 0; i < pairOtherList.size(); ++i) {
-            int j = pairOtherList.get(i).getId() - 1;
+        for (PairOther pairOther : pairOtherList) {
+            int j = pairOther.getId() - 1;
             if (!marked[j]) {
                 marked[j] = true;
-                rt[j] = pairOtherList.get(i).getStartTime() - processList.get(j).getArrivalTime();
+                rt[j] = pairOther.getStartTime() - processList.get(j).getArrivalTime();
             }
         }
         return rt;

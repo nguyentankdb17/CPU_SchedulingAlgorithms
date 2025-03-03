@@ -8,7 +8,7 @@ public class NonSJFAlgorithm {
 
     public static double[] waitingTime(List<ProcessObject> processList) {
         int n = processList.size();
-        double[] wt = new double[n];
+        double[] waiting = new double[n];
         int numProcess = 0, indexMin = 0;
         double time = 0.d, timeMin;
         boolean[] marked = new boolean[n];
@@ -21,19 +21,19 @@ public class NonSJFAlgorithm {
                 }
             }
             marked[indexMin] = true;
-            wt[indexMin] = time - processList.get(indexMin).getArrivalTime();
+            waiting[indexMin] = time - processList.get(indexMin).getArrivalTime();
             time += processList.get(indexMin).getBurstTime();
             numProcess++;
         }
-        return wt;
+        return waiting;
     }
 
     public static double[] turnAroundTime(List<ProcessObject> processList) {
-        double[] wt = waitingTime(processList);
-        double[] ta = new double[processList.size()];
+        double[] waiting = waitingTime(processList);
+        double[] turn_around = new double[processList.size()];
         for (int i = 0; i < processList.size(); ++i) {
-            ta[i] = wt[i] + processList.get(i).getBurstTime();
+            turn_around[i] = waiting[i] + processList.get(i).getBurstTime();
         }
-        return ta;
+        return turn_around;
     }
 }
